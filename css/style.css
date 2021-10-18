@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color),69%,61%);
@@ -22,7 +22,7 @@
     --container-color: #fff;
 
     /*========== Font and typography ==========*/
-    --body-font: font-family: 'Poppins', sans-serif;;
+    --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -99,8 +99,12 @@ ul{
 }
 
 a{
-    height: auto;
     text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* =========== Reusable CSS Classes ============== */
@@ -122,6 +126,104 @@ a{
     text-align: center;
 }
 
+/* =================== Start layouting ===================*/
 
+.container{
+    max-width: 768px;
+    margin: 0 var(--mb-1-5);
+}
 
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
 
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/* =============== NAV ================== */
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo, .nav_toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_logo:hover{
+    color: var(--first-color);
+}
+
+.nav_toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav_toggle:hover{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 767px){
+    .nav_menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+
+.nav_list{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_link:hover{
+    color: var(--first-color);
+}
+
+.nav_icon{
+    font-size: 1.2rem;
+}
+
+.nav_close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav_close:hover{
+    color: var(--first-color-alt);
+}
+
+/* ===== Show toggle menu (do validate in Js) */
+.show-menu{
+    bottom: 0;
+}
