@@ -228,6 +228,11 @@ img{
     bottom: 0;
 }
 
+/* ===== Active Link ==== */
+.active-link{
+    color: var(--first-color);
+}
+
 /* =========================================== End of Nav ============================================== */
 
 /* ========================================= Start of Main ============================================== */
@@ -866,7 +871,7 @@ img{
 
 .footer_bg{
     background-color: var(--first-color-second);
-    paddding: 2rem 0 3rem;
+    padding: 2rem 0 3rem;
 }
 
 .footer_title{
