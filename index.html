@@ -11,6 +11,8 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -758,9 +760,125 @@
         </div>
     </section>
     <!-- ========================== End of Services ======================== -->
+    
+    <!-- ========================== Start of Portfolio======================== -->
+    <section class="portfolio section" id="portfolio">
+         <h2 class="section_title">Portfolio</h2>
+         <span class="section_subtitle">Most recent work</span>
+
+         <div class="portfolio_container container swiper ">
+             <div class="swiper-wrapper">
+                   <!-- ==========================Portfolio 1 (Lokacara)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/lokacara-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">Lokacara</h3>
+                           <p class="portfolio_description">This is a bootcamp project held by YLabs Indonesia, which is a website for creating and selecting events</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               Source Code
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 2 (Ybike)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/ybike-fix.png" alt="YBike" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">Ybike</h3>
+                           <p class="portfolio_description">This is my project on campus to create a landing page and profile for a company</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               Source Code
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 3 (A Ridiculous Guess)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/ridiculous-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">A Ridiculous Guess</h3>
+                           <p class="portfolio_description">This is my project with a friend to create a website that has a function as a guessing game</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               Source Code
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 4 (Old n Cake)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/old-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">Old & New</h3>
+                           <p class="portfolio_description">This is the website of the results of my campus project exam</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               Source Code
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 5 (UI Hackathon)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/dinomerah-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">Zona Sekolah</h3>
+                           <p class="portfolio_description">This is the UI I made for the UGM hackathon. This is an application to see the mapping of zoning areas at the school level in Indonesia</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               See the design
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 6 (UI FileSharer)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="img/file-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">File Sharer</h3>
+                           <p class="portfolio_description">This is a UI design that I made for an exam at my college. This is an application to store data in the cloud with various data</p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               See the design
+                               <i class="uil uil-arrow-right button_icon"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <!-- ==========================Portfolio 7 (Data Titanic)======================== -->
+                   <div class="portfolio_content grid swiper-slide">
+                    <img src="img/colab-fix.png" alt="Lokacara Login" class="porfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Find insight in Titanic Dataset</h3>
+                        <p class="portfolio_description">This is a project from the Data Science Academy that I am participating in. Here I visualize the Titanic data and seek Insight from it</p>
+                        <a href="#" class="button button--flex button--small portfolio_button">
+                            See the design
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+                   </div>
+             </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev"> 
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+    </section>
+    <!-- ========================== End of Portfolio======================== -->
 
     </main>
 
+    <!-- Script to Swiper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- Script to JavaScript -->
     <script src="js/main.js"></script>
 </body>

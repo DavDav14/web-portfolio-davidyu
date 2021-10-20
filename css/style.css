@@ -733,3 +733,73 @@ img{
 }
 
 /* ========================= End of Services  ===========================*/
+
+/* ========================= Start of Portfolio  ===========================*/
+
+.portfolio_container{
+    overflow: initial;
+}
+
+.portfolio_content{
+    padding: 0 1.5rem;
+}
+
+.portfolio_img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon{
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+    content: none;
+    display: none;
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.7rem;
+}
+
+.swiper-button-next{
+    right: -.7rem;
+}
+
+
+
+/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+} */
+
+.swiper-horizontal > .swiper-pagination-bullets{
+    bottom: -5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet{
+    outline: none;
+}
+
+/* ========================= End of Portfolio  ===========================*/
